@@ -1,0 +1,421 @@
+body {
+    background: #fff7fb;
+}
+
+.hero {
+    background: linear-gradient(to right, #ff6fa1, #ffb6c1);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.navbar {
+    background: #ff4f87;
+}
+
+.card {
+    border-left: 5px solid #ff4f87;
+}
+.navbar {
+    background: #ff4f87;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    .navbar {
+    background: #ff4f87;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    margin: 0;
+    padding-top: 70px;
+}
+
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.nav-links a:hover {
+    background: white;
+    color: #ff4f87;
+}
+.hero {
+    background: url('https://images.unsplash.com/photo-1526045612212-70caf35c14df') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* overlay gelap biar teks jelas */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* tombol */
+.btn {
+    background: #ff4f87;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff2f6d;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #ff4f87;
+}
+/* HERO */
+.hero {
+    background: linear-gradient(to right, #ff6fa1, #ffb6c1);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+/* CONTAINER */
+.container {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* SERVICE CARD */
+.service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    position: relative;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ICON */
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* garis atas */
+.service-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #ff4f87;
+    top: 0;
+    left: 0;
+}
+/* SLIDER FULL BACKGROUND */
+.slider-container {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+/* setiap slide */
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* aktif slide */
+.active {
+    display: block;
+}
+
+/* overlay tulisan */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.overlay-text h1 {
+    font-size: 40px;
+}
+
+/* tombol next prev */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.5);
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.prev:hover, .next:hover {
+    background: white;
+}
+/* MODAL BACKGROUND */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+/* BOX POPUP */
+.modal-content {
+    background: white;
+    padding: 25px;
+    width: 300px;
+    margin: 15% auto;
+    border-radius: 15px;
+    text-align: center;
+    animation: pop 0.3s ease;
+}
+
+/* ANIMASI MUNCUL */
+@keyframes pop {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* BUTTON MODAL */
+.btn-modal {
+    background: #ff4f87;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background: gray;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* HERO ABOUT */
+.about-hero {
+    height: 70vh;
+    background: url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=1920&q=80')
+    center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+.about-overlay {
+    background: rgba(0,0,0,0.5);
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.about-overlay h1 {
+    font-size: 40px;
+}
+
+/* CARD ABOUT */
+.about-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+/* CONTACT CARD */
+.contact-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ICON BESAR */
+.contact-card .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+/* DASHBOARD CONTAINER */
+.dashboard-container {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* DASH CARD */
+.dash-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    position: relative;
+}
+
+.dash-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ICON DASHBOARD */
+.dash-card .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* angka besar */
+.dash-card p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff4f87;
+}
+/* CONTACT HERO BACKGROUND */
+.contact-hero {
+    height: 70vh;
+    background: url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=1920&q=80')
+    center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+/* overlay gelap */
+.contact-overlay {
+    background: rgba(0,0,0,0.5);
+    padding: 30px 40px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.contact-overlay h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
