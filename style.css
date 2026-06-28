@@ -419,3 +419,233 @@ body {
     font-size: 40px;
     margin-bottom: 10px;
 }
+/* PROFIL CONTAINER */
+.profile-container {
+    height: 70vh;
+    background: url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=1920&q=80')
+    center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+/* CARD PROFIL (SAMAKAN DENGAN CARD LAIN) */
+.profile-card  {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff4f87;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ICON (INI YANG MEMBUAT ADA BACKGROUND BULAT) */
+.profile-card .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+.profile-card h3 {
+    margin: 10px 0 5px;
+}
+
+.profile-card p {
+    margin: 0;
+    font-weight: bold;
+    color: #ff4f87;
+}
+.profile-hero {
+    height: 70vh;
+    background: url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=1920&q=80')
+    center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+/*==================== HEADER ====================*/
+
+.profil-header{
+
+margin-top:80px;
+
+padding:70px;
+
+text-align:center;
+
+background:linear-gradient(135deg,#ff4f87,#ff8fb3);
+
+color:white;
+
+}
+
+.profil-header h1{
+
+font-size:42px;
+
+margin-bottom:10px;
+
+}
+
+
+/*==================== PROFIL ====================*/
+
+.profil{
+
+padding:50px;
+
+background:#fff8fb;
+
+}
+
+.profil-card{
+
+max-width:1100px;
+
+margin:auto;
+
+display:flex;
+
+flex-wrap:wrap;
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+.foto{
+
+flex:1;
+
+min-width:300px;
+
+background:#ffe3ed;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:30px;
+
+}
+
+.foto img{
+
+width:280px;
+
+height:280px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:8px solid white;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+.biodata{
+
+flex:2;
+
+padding:40px;
+
+}
+
+.biodata h2{
+
+font-size:35px;
+
+margin-bottom:5px;
+
+color:#ff4f87;
+
+}
+
+.jabatan{
+
+display:inline-block;
+
+background:#ff4f87;
+
+color:white;
+
+padding:8px 18px;
+
+border-radius:30px;
+
+margin-bottom:20px;
+
+}
+
+table{
+
+width:100%;
+
+margin-bottom:25px;
+
+border-collapse:collapse;
+
+}
+
+table td{
+
+padding:10px;
+
+font-size:17px;
+
+}
+
+table i{
+
+color:#ff4f87;
+
+font-size:18px;
+
+width:25px;
+
+}
+
+.bio{
+
+background:#fff5f8;
+
+padding:20px;
+
+border-radius:15px;
+
+line-height:1.8;
+
+}
+
+.bio h3{
+
+color:#ff4f87;
+
+margin-bottom:10px;
+
+}
+
+@media(max-width:768px){
+
+.profil-card{
+
+flex-direction:column;
+
+}
+
+}
